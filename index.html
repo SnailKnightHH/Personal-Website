@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="David Hu - A first-year student with fourth-year experience at CS Waterloo."
+    />
+    <meta property="og:title" content="David Hu Personal Website" />
+    <meta
+      property="og:description"
+      content="Personal Website For David Hu CS Waterloo"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="..." />
     <title>David Hu Personal Website</title>
     <link rel="stylesheet" href="CSS/normalize-css.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
@@ -16,7 +27,7 @@
   <body>
     <header>
       <nav class="navigation-bar">
-        <h1><a class="Main-Name" href="\">David Hu</a></h1>
+        <h1><a class="Main-Name" href="/">David Hu</a></h1>
         <ul class="list list--inline">
           <li class="nav_list-item"><a href="#about-me">About Me</a></li>
           <li class="nav_list-item"><a href="#Education">Education</a></li>
@@ -47,33 +58,40 @@
           technology.
         </p>
       </article>
-      <img class="grid-right-border" src="Images/My Photo 1.jpg" alt="A picture of David Hu" />
+      <img
+        class="grid-right-border"
+        src="Images/My-Photo-1.jpg"
+        alt="A picture of David Hu"
+      />
     </section>
 
     <section id="Education">
       <h2 class="Education_header">Educations</h2>
       <ul class="Education">
         <li class="grid grid--special-1x2 grid--center">
-          <div>
+          <div data-aos="fade-right">
             <h3>Middle School: Lida</h3>
             <h4 class="Education_time">2014.9-2017.9</h4>
           </div>
-          <p>
+          <p data-aos="fade-left">
             The prestigious Lida Middle School is situated in the heart of the
             Suzhou, a prosperous hub city right beside Shanghai. I studied in
             Lida for three years, before graduating as one of the best and
             coming over to Canada. I developed a solid foundation of Math and
-            Science, represented my school in a speech competition in Singapore,
-            led my Jazz band to a number of concerts and made meaningful
-            connections who I shall call friends for the rest of my life.
+            Science, represented my school in a global speech competition in
+            Singapore, led my Jazz band to a number of concerts and made
+            meaningful connections who I shall call friends for the rest of my
+            life.
           </p>
         </li>
         <li class="grid grid--special-1x2 grid--center">
-          <div>
+          <div data-aos="fade-right">
             <h3>Highschool: Corpus Christi & Oakville Trafalgar</h3>
-            <h4 class="Education_time">CC: 2017.9-2018.9<br>OT: 2018.9-2020.9</br></h4>
+            <h4 class="Education_time">
+              CC: 2017.9-2018.9<br />OT: 2018.9-2020.9
+            </h4>
           </div>
-          <p>
+          <p data-aos="fade-left">
             I spent my grade 10 year in Corpus Christi Catholic Secondary School
             in Burlington, ON, during which I seamlessly blended into the
             Canadian culture and gained a global perspective. I then moved to
@@ -85,13 +103,13 @@
           </p>
         </li>
         <li class="grid grid--special-1x2 grid--center">
-          <div>
+          <div data-aos="fade-right">
             <h3>Post-Secondary: University of Waterloo CS</h3>
             <h4 class="Education_time">2020.9-2025.5</h4>
           </div>
-          <p>
+          <p data-aos="fade-left">
             I am currently a first-year student at the computer science program
-            at the University of Waterloo. I am thrilled to have the previous
+            at the University of Waterloo. I am thrilled to have the precious
             opportunity to further my career in a field that I am truly
             passionate about. Besides excelling at school as usual, I love to
             experiment with different aspects of computer science on my own, and
@@ -103,10 +121,10 @@
       </ul>
     </section>
 
-    <section id="Skills" data-aos="zoom-in">
+    <section id="Skills">
       <h2 class="skill-heading">Skills</h2>
       <div class="grid grid--1x3 grid--gap">
-        <article class="skill-card">
+        <article class="skill-card" data-aos="slide-right">
           <h2 class="skill-card_heading">Academic Skills</h2>
           <ul>
             <li>
@@ -122,7 +140,7 @@
             </li>
           </ul>
         </article>
-        <article class="skill-card">
+        <article class="skill-card" data-aos="slide-up">
           <h2 class="skill-card_heading">Technical Skills</h2>
           <ul>
             <li>
@@ -134,24 +152,23 @@
             <li>Ubisoft NEST API (Hack the North 2021)</li>
           </ul>
         </article>
-        <article class="skill-card">
+        <article class="skill-card" data-aos="slide-left">
           <h2 class="skill-card_heading">Soft Skills</h2>
           <ul>
-            <dl>
-              <dt>SHAD Waterloo 2019</dt>
-              <dt>Three languages:</dt>
-              <dd>Mandarin (Mother Tougue)</dd>
-              <dd>English (Daily Use)</dd>
-              <dd>French (Un petit peu)</dd>
-              <dt>Musical Instruments</dt>
-              <dd>Saxophone Level 8, Erhu Level 10</dd>
-              <dd>
-                Peel Music Festival Saxophone First Place in several Woodwind
-                classes
-              </dd>
-              <dd>Jazz band Captain in Lida</dd>
-            </dl>
-            <dt>Independent, Multi-Culture, Friendly and Collaborative</dt>
+            <li>SHAD Waterloo 2019</li>
+            <li>Three languages:</li>
+            <li class="list-item-dd">Mandarin (Mother Tougue)</li>
+            <li class="list-item-dd">English (Daily Use)</li>
+            <li class="list-item-dd">French (Un petit peu)</li>
+            <li>Musical Instruments</li>
+            <li class="list-item-dd">Saxophone Level 8, Erhu Level 10</li>
+            <li class="list-item-dd">
+              Peel Music Festival Saxophone First Place in several Woodwind
+              classes
+            </li>
+            <li class="list-item-dd">Jazz band Captain in Lida</li>
+
+            <li>Independent, Multi-Culture, Friendly and Collaborative</li>
           </ul>
         </article>
       </div>
@@ -163,7 +180,7 @@
       <div class="grid grid--1x3--project grid--gap">
         <article class="card" data-aos="fade-right">
           <img
-            src="Images/Fortress in the Sky IMG.jpg"
+            src="Images/Fortress-in-the-Sky-IMG.jpg"
             alt="Fortress in the Sky Cover"
             class="card_img"
           />
@@ -172,7 +189,7 @@
             A 2D platformer where you follow the legend to find the mysterious
             celestial civilization! Submission for DevSquad Academy Jam 2020.
           </p>
-          <div class="grid grid--1x2 grid--gap card_btns">
+          <div class="grid grid--1x2--project grid--gap card_btns">
             <form
               class="card_github-form"
               action="https://github.com/SnailKnightHH/ConnectedWorlds"
@@ -185,7 +202,7 @@
             </form>
             <form
               class="card_video-form"
-              action="Videos/Fortress in the Sky Trailer.mp4"
+              action="Videos/Fortress-in-the-Sky-Trailer.mp4"
             >
               <button class="btn btn--primary card_button">
                 <span class="card_icon">
@@ -198,7 +215,7 @@
 
         <article class="card" data-aos="fade-up">
           <img
-            src="Images/Clear Game SnapShot.png"
+            src="Images/Clear-Game-SnapShot.png"
             alt="Room Clear Cover"
             class="card_img"
           />
@@ -207,7 +224,7 @@
             A top down shooter game where you play as a special force operator
             tasked to infiltrate enemy facility.
           </p>
-          <div class="grid grid--1x2 grid--gap card_btns">
+          <div class="grid grid--1x2--project grid--gap card_btns">
             <form
               class="card_github-form"
               action="https://github.com/SnailKnightHH/Clear-Room"
@@ -220,7 +237,7 @@
             </form>
             <form
               class="card_video-form"
-              action="Videos/Clear Game Recording.mp4"
+              action="Videos/Clear-Game-Recording.mp4"
             >
               <button class="btn btn--primary card_button">
                 <span class="card_icon">
@@ -233,7 +250,7 @@
 
         <article class="card" data-aos="fade-left">
           <img
-            src="Images/Gravity Skimmer Snapshot.png"
+            src="Images/Gravity-Skimmer-Snapshot.png"
             alt="Gravity Skimmer Cover"
             class="card_img"
           />
@@ -242,7 +259,7 @@
             A 2D platformer where you get to traverse difficult terrains with
             the ability to manipulate gravity. (HTN 2021 Submission)
           </p>
-          <div class="grid grid--1x2 grid--gap card_btns">
+          <div class="grid grid--1x2--project grid--gap card_btns">
             <form
               class="card_github-form"
               action="https://github.com/SnailKnightHH/GravitySkimmer"
@@ -255,7 +272,7 @@
             </form>
             <form
               class="card_video-form"
-              action="Videos/Gravity Skimmer Demo.mp4"
+              action="Videos/Gravity-Skimmer-Demo.mp4"
             >
               <button class="btn btn--primary card_button">
                 <span class="card_icon">
@@ -270,7 +287,7 @@
       <div class="grid grid--1x3--project grid--gap">
         <article class="card" data-aos="fade-right">
           <img
-            src="Images/Fruit Ninja Snapshot.png"
+            src="Images/Fruit-Ninja-Snapshot.png"
             alt="Fruit Ninja Cover"
             class="card_img"
           />
@@ -279,7 +296,7 @@
             A Fruit ninja spin-off using C++ and OpenGL. Slice as many fruits as
             possible within 1 minute and avoid flashing bombs!
           </p>
-          <div class="grid grid--1x2 grid--gap card_btns">
+          <div class="grid grid--1x2--project grid--gap card_btns">
             <form
               class="card_github-form"
               action="https://github.com/SnailKnightHH/Fruit-Ninja-"
@@ -290,7 +307,7 @@
                 </span>
               </button>
             </form>
-            <form class="card_video-form" action="Videos/Fruit Ninja Video.mp4">
+            <form class="card_video-form" action="Videos/Fruit-Ninja-Video.mp4">
               <button class="btn btn--primary card_button">
                 <span class="card_icon">
                   <i class="fas fa-play-circle"></i>
@@ -301,7 +318,7 @@
         </article>
       </div>
     </section>
-  
+
     <footer id="contact" class="contact">
       <h2 class="contact_header">Contact</h2>
       <div class="contact_div">
@@ -329,8 +346,8 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
