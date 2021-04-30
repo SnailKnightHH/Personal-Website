@@ -131,7 +131,6 @@ a:hover {
 /* nav */
 .navigation-bar {
   background: #fafcfa;
-  border: 2px solid gold;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -220,6 +219,7 @@ a:hover {
   padding: 0 1.5rem;
 }
 
+/*
 .grid-left-border {
   border: 2px solid gold;
 }
@@ -228,6 +228,7 @@ a:hover {
   border-top: 2px solid gold;
   border-bottom: 2px solid gold;
 }
+*/
 
 /* Education */
 .grid--center {
@@ -281,7 +282,7 @@ a:hover {
   max-height: 60vh;
   margin: 3rem;
   border-radius: 5.5%;
-  transition: border 0.2s ease-out;
+  transition: border 0.8s ease-out;
 }
 
 @media screen and (max-width: 1023px) {
@@ -321,7 +322,7 @@ a:hover {
 }
 
 .card:hover {
-  border: 2px solid gold;
+  border: 2px solid var(--color-granite);
 }
 
 .card_title {
@@ -344,7 +345,6 @@ a:hover {
 /* skill card */
 .skill-card {
   margin: 3rem 3rem;
-  border: 2px solid yellow;
 }
 
 .skill-card_heading {
