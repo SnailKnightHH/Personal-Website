@@ -148,10 +148,18 @@ a:hover {
   height: auto;
 }
 
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 764px) {
   .navigation-bar .Main-Name {
     padding-left: 1.5rem;
     font-size: 3rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navigation-bar .Main-Name {
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
     height: auto;
   }
 }
@@ -160,6 +168,20 @@ a:hover {
   font-size: 2rem;
   font-weight: bold;
   color: var(--color-primary);
+}
+
+@media screen and (max-width: 764px) {
+  .nav_list-item {
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav_list-item {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+  }
 }
 
 /* Grids */
@@ -292,7 +314,7 @@ a:hover {
   max-height: 75vh;
   margin: 3rem;
   border-radius: 5.5%;
-  transition: border 0.8s ease-out;
+  transition: border 0.3s ease-out;
 }
 
 @media screen and (max-width: 1023px) {
