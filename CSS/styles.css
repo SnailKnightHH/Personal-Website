@@ -114,18 +114,40 @@ a:hover {
   color: var(--color-primary);
 }
 
-.list--inline {
-  margin: 0 0;
-}
-
-.list--inline .nav_list-item {
-  display: inline-block;
-  margin-right: 2rem;
-}
-
 .list-item-dd {
   list-style: none;
   text-indent: 4rem;
+}
+
+/* Collapsibles */
+.collapsible_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible_icon {
+  margin-top: 2rem;
+  transition: color 0.3s;
+}
+
+.collapsible_heading {
+  margin-top: 0;
+}
+
+.collapsible_content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible_icon {
+  color: #082891;
+}
+
+.collapsible--expanded .collapsible_content {
+  max-height: 100vh;
+  opacity: 1;
 }
 
 /* nav */
@@ -134,12 +156,18 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  /* height: 10rem; */
   width: 100vw;
   position: fixed;
   overflow: hidden;
   top: 0;
   z-index: 10;
+}
+
+.navigation-bar .list {
+  width: 100%;
 }
 
 .navigation-bar .Main-Name {
@@ -148,19 +176,26 @@ a:hover {
   height: auto;
 }
 
-@media screen and (max-width: 764px) {
-  .navigation-bar .Main-Name {
-    padding-left: 1.5rem;
-    font-size: 3rem;
-    height: auto;
-  }
+.nav_toggler {
+  padding-right: 3rem;
 }
 
-@media screen and (max-width: 500px) {
-  .navigation-bar .Main-Name {
-    padding-left: 0.5rem;
-    font-size: 1.5rem;
-    height: auto;
+@media screen and (min-width: 764px) {
+  .navigation-bar .list {
+    margin: 0 0;
+    width: auto;
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .navigation-bar .list .nav_list-item {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+
+  .nav_toggler {
+    display: none;
   }
 }
 
@@ -168,20 +203,6 @@ a:hover {
   font-size: 2rem;
   font-weight: bold;
   color: var(--color-primary);
-}
-
-@media screen and (max-width: 764px) {
-  .nav_list-item {
-    font-size: 1.5rem;
-    padding-right: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .nav_list-item {
-    font-size: 1rem;
-    padding-right: 0.5rem;
-  }
 }
 
 /* Grids */
@@ -396,10 +417,8 @@ a:hover {
   margin-left: 5rem;
 }
 
-.contact_div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contact .list {
+  width: 100%;
 }
 
 .contact_email,
@@ -418,6 +437,33 @@ a:hover {
 .contact_instagram:hover,
 .contact_github:hover {
   color: #276d16;
+}
+
+@media screen and (min-width: 724px) {
+  .contact_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .contact .list {
+    margin: 0 0;
+    width: auto;
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .contact .list .contact_list-item {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+
+  .nav_toggler {
+    display: none;
+  }
 }
 
 #about-me,
